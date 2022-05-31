@@ -1,0 +1,373 @@
+package com.projectseries;
+import java.util.*;
+public class Main {
+
+    public static void main(String[] args) {
+//       1. print the pattern
+//        * * * * *
+//        * * * * *
+//        * * * * *
+//        * * * * *
+        int n=4;
+        int m=5;
+//        outer loop
+          for(int i=1; i<=n; i++){
+//              inner loop
+              for(int j=1; j<=m; j++){
+                  System.out.print("*");
+              }
+              System.out.println();
+          }
+// 2. Hollow rectangle pattern
+//        * * * * *
+//        *       *
+//        *       *
+//        * * * * *
+        Scanner sc =new Scanner(System.in);
+        int n=sc.nextInt();
+        int m=sc.nextInt();
+//        outer loop
+          for(int i=1; i<=n; i++){
+//              inner loop
+              for(int j=1; j<=m; j++){
+//                  cell-> (i,j)
+                  if (i==1 || j==1 || i==n || j==m){
+                      System.out.print("*");
+                  }
+                  else{
+                      System.out.print(" ");
+                  }
+              }
+              System.out.println();
+          }
+//       3. Half pyramid
+//        *
+//        **
+//        ***
+//        ****
+        Scanner sc= new Scanner(System.in);
+        int n = sc.nextInt();
+        for(int i=1; i<=n; i++){
+            for(int j=1;j<=i;j++){
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+//      4.  Inverted Half pyramid
+//        ****
+//        ***
+//        **
+//        *
+        Scanner sc= new Scanner(System.in);
+        int n = sc.nextInt();
+        for(int i=n; i>=1; i--){
+            for(int j=1;j<=i;j++){
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+// 5.inverted half pyramid(rotated by 180)
+//    *
+//   **
+//  ***
+        int n=4;
+//        outer loop
+        for(int i=0;i<=n;i++){
+//            inner loop-> space print
+            for (int j=1;j<=n-i;j++){
+                System.out.print(" ");
+            }
+//            inner loop ->star print
+            for(int j=1;j<=i;j++){
+                System.out.print("*");
+            }
+
+            System.out.println();
+        }
+//6. half pyramid with numbers
+//        1
+//        12
+//        123
+
+        Scanner sc= new Scanner(System.in);
+        int n=sc.nextInt();
+        for(int i=1;i<=n;i++){
+            for(int j=1;j<=i;j++){
+                System.out.print(j);
+            }
+            System.out.println();
+    }
+//7. half pyramid with numbers
+//        123
+//        12
+//        1
+
+        Scanner sc= new Scanner(System.in);
+        int n=sc.nextInt();
+        for(int i=1;i<=n;i++){
+            for(int j=1;j<=n-i+1;j++){
+                System.out.print(j);
+            }
+            System.out.println();
+        }
+//       8. Floyd's Triangle
+//        1
+//        23
+//        456
+
+        int m=1;
+        Scanner sc = new Scanner(System.in);
+        int n= sc.nextInt();
+        for(int i=1;i<=n;i++){
+            for(int j=1;j<=i;j++){
+                System.out.print(m+" ");
+                m++;
+            }
+            System.out.println();
+        }
+//        9. (0,1) Triangle
+        Scanner sc=new Scanner(System.in);
+        int n= sc.nextInt();
+        for(int i= 0;i<=n;i++){
+            for(int j=1;j<=i;j++){
+                if((i+j)%2==0){
+                    System.out.print(1);
+                }
+                else{
+                    System.out.print(0);
+                }
+            }
+            System.out.println();
+        }
+//        Solid rhombus
+        int n = 5;
+        for (int i = 1; i <= n; i++) {
+            for (int j = 1; j <= n - i; j++) {
+                System.out.print(" ");
+            }
+            for (int j =1; j<= 5; j++) {
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+//        Butterfly pattern
+        Scanner sc = new Scanner(System.in);
+        int n=sc.nextInt();
+//        upper half
+        for(int i=1;i<=n;i++){
+//            first part
+            for(int j=1;j<=i;j++) {
+                System.out.print("*");
+            }
+            int spaces= 2*(n-i);
+            for(int j= 1;j<=spaces;j++){
+                System.out.print(" ");
+            }
+//            Second part
+            for(int j=1; j<=i;j++){
+                System.out.print("*");
+            }
+            System.out.println();
+
+
+        }
+//        lower half
+        for(int i=n;i>=1;i--){
+//            first part
+            for(int j=1;j<=i;j++) {
+                System.out.print("*");
+            }
+            int spaces= 2*(n-i);
+            for(int j= 1;j<=spaces;j++){
+                System.out.print(" ");
+            }
+//            Second part
+            for(int j=1; j<=i;j++){
+                System.out.print("*");
+            }
+            System.out.println();
+
+
+        }
+//palindrome pyramid
+/*
+        1 
+      2 1 2 
+    3 2 1 2 3 
+  4 3 2 1 2 3 4 
+5 4 3 2 1 2 3 4 5 
+*/
+        Scanner sc= new Scanner(System.in);
+        int n=sc.nextInt();
+
+        for(int i=1;i<=n;i++){
+            for(int j=1;j<=n-i;j++){
+                System.out.print("  ");
+            }
+            for(int j=i;j>=1;j--){
+                System.out.print(j+" ");
+            }
+            for(int j=2;j<=i;j++){
+                System.out.print(j+" ");
+            }
+            System.out.println();
+        }
+//        Diamond pattern
+/*
+    * 
+   * * 
+  * * * 
+ * * * * 
+* * * * * 
+ * * * * 
+  * * * 
+   * * 
+    * 
+*/
+        Scanner sc= new Scanner(System.in);
+        int n=sc.nextInt();
+
+        for(int i=1;i<=n;i++){
+            for(int j=1;j<=n-i;j++){
+                System.out.print(" ");
+            }
+            for(int j=1;j<=i;j++){
+//also can use j<=2*i-1;
+                System.out.print("* ");
+            }
+            System.out.println();
+        }
+        for(int i=n-1;i>=1;i--){
+            for(int j=1;j<=n-i;j++){
+                System.out.print(" ");
+            }
+            for(int j=1;j<=i;j++){
+                System.out.print("* ");
+            }
+            System.out.println();
+        }
+//        Hollow butterfly
+/*
+*    *
+**  **
+* ** *
+* ** *
+**  **
+*    *
+*/
+        Scanner sc= new Scanner(System.in);
+        int n=sc.nextInt();
+
+        for(int i=1;i<=n;i++){
+            for(int j=1;j<=i;j++){
+                if(j!=1 && j!=i){
+                    System.out.print(" ");
+                }else {
+                    System.out.print("*");
+                }
+            }
+            for(int j=1;j<=2*(n-i);j++){
+                System.out.print(" ");
+            }
+            for(int j=1;j<=i;j++){
+                if(j!=1 && j!=i){
+                    System.out.print(" ");
+                }else {
+                    System.out.print("*");
+                }
+            }
+            System.out.println();
+        }
+        for(int i=n;i>=1;i--){
+            for(int j=1;j<=i;j++){
+                if(j!=1 && j!=i){
+                    System.out.print(" ");
+                }else {
+                    System.out.print("*");
+                }
+            }
+            for(int j=1;j<=2*(n-i);j++){
+                System.out.print(" ");
+            }
+            for(int j=1;j<=i;j++){
+                if(j!=1 && j!=i){
+                    System.out.print(" ");
+                }else {
+                    System.out.print("*");
+                }
+            }
+            System.out.println();
+        }
+
+/* Solid rhombus
+        * * * * *
+      *       *
+    *       *
+   *       *
+ * * * * *
+
+ */
+    public static void main(String[] args) {
+
+        Scanner sc =new Scanner(System.in);
+        int n=sc.nextInt();
+        int m=sc.nextInt();
+//        outer loop
+        for(int i=1; i<=n; i++){
+//              inner loop
+            for(int j=1;j<=n-i;j++){
+                System.out.print("  ");
+            }
+            for(int j=1; j<=m; j++){
+//                  cell-> (i,j)
+                if (i==1 || j==1 || i==n || j==m){
+                    System.out.print("* ");
+                }
+                else{
+                    System.out.print("  ");
+                }
+            }
+            System.out.println();
+        }
+        //        half pyramid
+        Scanner sc=new Scanner(System.in);
+        int n=sc.nextInt();
+        for(int i=1;i<=n;i++){
+            for(int j=1;j<=n-i;j++){
+                System.out.print(" ");
+            }
+            for(int j=1;j<=i;j++){
+                System.out.print(j+" ");
+            }
+            System.out.println();
+        }
+
+
+
+        //        Inverted half pyramid
+        Scanner sc=new Scanner(System.in);
+        int n=sc.nextInt();
+        for(int i=n;i>=1;i--){
+            for(int j=1;j<=i;j++){
+                System.out.print(n+1-i+" ");
+            }
+            System.out.println();
+        }
+
+//        Pascal's Triangle
+        Scanner sc=new Scanner(System.in);
+        int n=sc.nextInt();
+        for(int i=1;i<=n;i++){
+            for(int j=0;j<=n-i;j++){
+                System.out.print(" ");
+            }
+            int c=1;
+            for(int k=1;k<=i;k++){
+                System.out.print(c+" ");
+                c=c*(i-k)/k;
+            }
+            System.out.println();
+        }
+   }
+}
+

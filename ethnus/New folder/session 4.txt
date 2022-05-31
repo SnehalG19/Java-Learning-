@@ -1,0 +1,220 @@
+package 
+import java.util.*;
+public class StackPush{
+
+		public static void main(string[] args){
+/*creating object the objet of stack class*/
+			Stack<String> st=new Stack<>();
+/*pushing all the elements to the stack*/
+			st.push("");
+			st.push("");
+			st.push("");
+			st.push("");
+			st.push("");
+/*printing all the elements*/
+			System.out.println("Stack:"+st);
+/*pop the element*/
+			System.out.println("After popping:"+st.pop());
+		}
+}
+The element which is inserted at the last is the first one which is to be visible at the top of the stack as well as the first one to be popped out
+Both the insertion and deletion takes place only at one end called the top of the stack
+package com.ethnus.javabatch10to12;
+import java.util.*;
+public class StackPush {
+
+	public static void main(String[] args) {
+		/*Create the object of Stack Class*/
+		Stack<String> st=new Stack<>();
+		/*Checking if the stack is empty*/
+		boolean result=st.empty();
+		System.out.println("Is stack empty?:" +result);
+		
+		/*Pushing all the elements in the stack*/
+		st.push("Gowtham");
+		st.push("Suriya");
+		st.push("Vani");
+		st.push("Boominathan");
+		/*Print all the elements*/
+		System.out.println("Stack:"+st);
+      /*Pop the element*/
+		System.out.println("After popping:"+st.pop());
+		  result=st.empty();
+		System.out.println("Is stack empty?:"+result);
+       /*Returning the top element of the stack*/
+		System.out.println("Top element of the stack:"+st.peek());
+	
+	}
+}
+search() method:Can be used for searching for a particular element in the stack.
+
+ackage com.ethnus.javabatch10to12;
+import java.util.*;
+public class StackPush {
+
+	public static void main(String[] args) {
+		/*Create the object of Stack Class*/
+		Stack<String> st=new Stack<>();
+		/*Checking if the stack is empty*/
+		boolean result=st.empty();
+		System.out.println("Is stack empty?:" +result);
+		
+		/*Pushing all the elements in the stack*/
+		st.push("Gowtham");
+		st.push("Suriya");
+		st.push("Vani");
+		st.push("Boominathan");
+		/*Print all the elements*/
+		System.out.println("Stack:"+st);
+      /*Pop the element*/
+		System.out.println("After popping:"+st.pop());
+		  result=st.empty();
+		System.out.println("Is stack empty?:"+result);
+       /*Returning the top element of the stack*/
+		System.out.println("Top element of the stack:"+st.peek());
+	   /*Check if the particular element is available using the search() method*/
+	    System.out.println("The particular element is available:"+st.search("Gowtham"));
+	    
+	
+	
+	}
+}
+package com.ethnus.javabatch10to12;
+import java.util.*;
+public class StackPush {
+
+	public static void main(String[] args) {
+		/*Create the object of Stack Class*/
+		Stack<String> st=new Stack<>();
+		/*Checking if the stack is empty*/
+		boolean result=st.empty();
+		System.out.println("Is stack empty?:" +result);
+		
+		/*Pushing all the elements in the stack*/
+		st.push("Gowtham");
+		st.push("Suriya");
+		st.push("Vani");
+		st.push("Boominathan");
+		/*Print all the elements*/
+		System.out.println("Stack:"+st);
+      /*Pop the element*/
+		System.out.println("After popping:"+st.pop());
+		  result=st.empty();
+		System.out.println("Is stack empty?:"+result);
+       /*Returning the top element of the stack*/
+		System.out.println("Top element of the stack:"+st.peek());
+	   /*Check if the particular element is available using the search() method*/
+	    System.out.println("The particular element is available:"+st.search("Pooja"));
+	    
+	
+	
+	}
+}
+search():Used to search for a particular element in the stack.IF the particular element is not found it will return a negative value.
+
+package com.ethnus.javabatch10to12;
+import java.util.*;
+public class StackPushInteger {
+
+	public static void main(String[] args) {
+		/*Create an object of the Stack class*/
+		Stack<Integer> st=new Stack<>();
+		boolean result=st.empty();
+		System.out.println("Is stack empty?:"+result);
+		
+		/*Pushing all the elements to stack*/
+		st.push(9);
+		st.push(10);
+		st.push(11);
+		st.push(12);
+		st.push(13);
+		/*Printing all the elements*/
+		System.out.println("Stack elements are:"+st);
+		/*Pop the element*/
+		System.out.println("After popping the element:"+st.pop());
+	   result=st.empty();
+	  System.out.println("Is stack empty?:"+result);
+	System.out.println("PArticular element available:"+st.search(9));
+	/*Returning the top element of the stack*/
+	System.out.println("Top element of the stack:"+st.peek());
+	}
+
+}
+package com.ethnus.javabatch10to12;
+import java.util.*;
+public class StackPushInteger {
+
+	public static void main(String[] args) {
+		/*Create an object of the Stack class*/
+		Stack<Integer> st=new Stack<>();
+		boolean result=st.empty();
+		System.out.println("Is stack empty?:"+result);
+		
+		/*Pushing all the elements to stack*/
+		st.push(9);
+		st.push(10);
+		st.push(11);
+		st.push(12);
+		st.push(13);
+		/*Printing all the elements*/
+		System.out.println("Stack elements are:"+st);
+		/*Pop the element*/
+		System.out.println("After popping the element:"+st.pop());
+	   result=st.empty();
+	  System.out.println("Is stack empty?:"+result);
+	System.out.println("PArticular element available:"+st.search(9));
+	/*Returning the top element of the stack*/
+	System.out.println("Top element of the stack:"+st.peek());
+	/*REturning the size of the stack*/
+	System.out.println("Size of the stack:"+st.size());
+	
+	}
+
+}
+
+
+package com.ethnus.javabatch10to12;
+import java.util.*;
+public class StackPushPlaces {
+
+	public static void main(String[] args) {
+		/*Create an object of the Stack class*/
+		Stack<String> s=new Stack<>();
+		/*Checking whether stack is empty*/
+		boolean result=s.empty();
+		System.out.println("Is stack empty?:"+result);
+		/*Adding all the elements of the stack*/
+		s.push("Bangalore");
+		s.push("Chennai");
+		s.push("Hyderabad");
+		s.push("Pune");
+		s.push("Kerala");
+		/*Printing the stack*/
+		System.out.println("Stack elements:"+s);
+		/*Popping the element from the stack*/
+		System.out.println("Popping the element:"+s.pop());
+		/*Checking whether stack is empty*/
+		result=s.empty();
+		/*Printing the element of the stack*/
+		System.out.println("IS stack empty?:"+result);
+		/*Returning the top element of the stack*/
+		System.out.println("Returning the top element:"+s.peek());
+        /*Returning the size of the stack*/
+		System.out.println("Size of the stack:"+s.size());
+	}
+
+}
+for(String element:s)
+		{
+			System.out.println(element);
+		}
+	/*Using the iterator interface*/
+		Iterator<String> itr=s.iterator();
+		while(itr.hasNext())
+		{
+			System.out.println(itr.next());
+		}
+	
+	}
+
+}

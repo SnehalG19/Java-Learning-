@@ -1,0 +1,110 @@
+ //
+ public static void printMyName(String name){
+        System.out.println(name);
+        return;
+    }
+    public static void main(String args[]) {
+// Print given name in a function
+        Scanner sc= new Scanner (System.in);
+        String nam e= sc.next();
+
+        printMyName(name);
+
+
+
+    }
+//
+//
+public static int calculateSum(int a, int b){
+        int sum = a+b;
+        return sum;
+    }
+    public static void main(String args[]) {
+// take 2 number from user and print their sum
+        Scanner sc= new Scanner (System.in);
+        int a= sc.nextInt();
+        int b= sc.nextInt();
+
+        int sum=calculateSum(a,b);
+        System.out.println("the sum is "+sum);
+
+
+
+    }
+//
+//
+public static int calculateProduct(int a, int b){
+//        int product = a*b;
+        return a*b;
+    }
+
+    
+    public static void main(String args[]) {
+// take 2 number from user and print their sum
+        Scanner sc= new Scanner (System.in);
+        int a= sc.nextInt();
+        int b= sc.nextInt();
+
+//        int product=calculateProduct(a,b);
+        System.out.println("the product is : "+ calculateProduct(a,b));
+
+
+
+    }
+//
+//
+public static int calculateFactorial(int a){
+        int factorial = 1;
+        if(a==1){
+            factorial = 1;
+        }else if(a<1){
+            System.out.println("Invalid Input");
+            return 0;
+        }else{
+            factorial = a * calculateFactorial(a-1);
+        }
+        return factorial;
+    }
+
+
+    public static void main(String args[]) {
+// take 2 number from user and print their sum
+        Scanner sc= new Scanner (System.in);
+        int a= sc.nextInt();
+//        int b= sc.nextInt();
+
+//        int product=calculateProduct(a,b);
+        System.out.println("the product is : "+ calculateFactorial(a));
+
+
+
+    }
+//
+//public static void calculateFactorial(int a){
+        int factorial = 1;
+        if(a<0){
+            System.out.println("Invalid Input");
+            return;
+        }
+        for(int i=a;i>=1;i--){
+            factorial =factorial*i;
+        }
+        System.out.println("The factorail is : " + factorial);
+        return ;
+    }
+
+
+    public static void main(String args[]) {
+// take 2 number from user and print their sum
+        Scanner sc= new Scanner (System.in);
+        int a= sc.nextInt();
+//        int b= sc.nextInt();
+
+//        int product=calculateProduct(a,b);
+        calculateFactorial(a);
+
+
+
+    }
+//
+//

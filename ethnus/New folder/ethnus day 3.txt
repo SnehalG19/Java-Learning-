@@ -1,0 +1,6 @@
+offer method
+list.offer("vinod")
+using the clear method
+list.clear();
+Isempty method
+
